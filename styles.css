@@ -1,0 +1,303 @@
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+/* Header */
+.header {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header img.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: auto;
+}
+.nav {
+    margin-left: 120px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    flex-grow: 1;
+    position: relative;
+}
+.nav a, .dropdown-toggle {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav a:hover, .dropdown-toggle:hover {
+    color: #689B70;
+}
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    color: #333;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+}
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+/* User Icon and Name */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.user-info img {
+    width: 24px;
+    vertical-align: middle;
+}
+
+
+/* Halaman Dashboard */
+.dashboard-title {
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+/* Card Styles */
+.card {
+    background-color: #e0f7fa;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    color: #00796b;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-pink {
+    background-color: #f8bbd0;
+    color: #c2185b;
+}
+.card-purple {
+    background-color: #e1bee7;
+    color: #7b1fa2;
+}
+
+
+/* Halaman Data Nasabah */
+.data-nasabah-title {
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+/* Search and Table Container */
+.search-table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+.search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+.search-bar button {
+    background-color: #f8e1a6;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.search-bar .tambah-button {
+    margin-left: auto;
+    background-color: #f8e1a6;
+    color: #333;
+}
+/* Table Styles */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+.btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+.btn-edit {
+    background-color: #4CAF50;
+}
+.btn-delete {
+    background-color: #f44336;
+}
+.btn-edit:hover {
+    background-color: #45a049;
+}
+.btn-delete:hover {
+    background-color: #e31b0c;
+}
+
+
+/* Halaman Data Sampah */
+/* Page Title */
+.data-sampah-title {
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+
+/* Halaman Edit Sampah */
+.riwayat-setoran-title {
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+/* Table Container */
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+
+/* Halaman Penjualan Sampah*/
+.penjualan-title {
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+.saldo-total {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.filter-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    gap: 10px;
+}
+.filter-container select, .filter-container button {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.filter-container button {
+    background-color: #689B70;
+    color: #fff;
+    cursor: pointer;
+}
+.filter-container button:hover {
+    background-color: #567a58;
+}
+
+/* Halaman Setoran Nasabah*/
+.setoran-title {
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Halaman Riwayat Setoran Nasabah*/
+/* Halaman Riwayat Setoran dan Data Nasabah */
+.riwayat-setoran-title {
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.download-container {
+    margin-left: auto;
+}
+
+.download-container button {
+    background-color: #689B70;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.download-container button:hover {
+    background-color: #567a58;
+}
